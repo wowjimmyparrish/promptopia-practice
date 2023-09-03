@@ -1,4 +1,4 @@
-
+import Feed from "@components/Feed"
 
 function Home() {
   return (
@@ -13,6 +13,7 @@ function Home() {
       </p>
       
       {/* Feed Component */}
+      <Feed/>
     </section>
   ) 
 }
