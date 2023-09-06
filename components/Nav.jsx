@@ -12,14 +12,12 @@ function Nav() {
 
    
   useEffect(() => {
-    const setProviders = async () => {
-      const response = await getProviders()
+    (async () => {
+      const res = await getProviders();
+      setProviders(res);
+    })();
+  }, []);
 
-      setProviders(response)
-    }
-
-    setProviders()
-    }, [])
 
   return (
     <nav className='flex-between w-full mb-16 pt-3'>
